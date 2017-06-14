@@ -34,12 +34,12 @@ namespace Smarty.ViewModels
         {
             List<MenuItem> menuItems = new List<MenuItem>();
             menuItems.Add(new MenuItem() { Title = "Home", SymbolIcon = Symbol.Home, NavigateTo = typeof(Home) });
-            ///menuItems.Add(new MenuItem() { Title = "Favourite", SymbolIcon = Symbol.OutlineStar, NavigateTo = typeof(Favourite) });
-            menuItems.Add(new MenuItem() { Title = "Map", SymbolIcon = Symbol.Map, NavigateTo = typeof(Add) });
-            ///menuItems.Add(new MenuItem() { Title = "Video", SymbolIcon = Symbol.Video, NavigateTo = typeof(Video) });
-            ///menuItems.Add(new MenuItem() { Title = "Download", SymbolIcon = Symbol.Download, NavigateTo = typeof(Download) });
+            menuItems.Add(new MenuItem() { Title = "Cars Available", SymbolIcon = Symbol.List, NavigateTo = typeof(List) });
+            menuItems.Add(new MenuItem() { Title = "Add a Car", SymbolIcon = Symbol.Add, NavigateTo = typeof(Add) });
 
             return menuItems;
         }
+
+   
     }
 }
