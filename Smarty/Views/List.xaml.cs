@@ -28,9 +28,9 @@ namespace Smarty.Views
         {
             this.InitializeComponent();
             ObservableCollection<Car> dataList = new ObservableCollection<Car>();
-            Car c1 = new Car() { Brand = "Ferrari", Model = " Lamborghinis", Color = "Red" };
-            Car c2 = new Car() { Brand = "Honda", Model = "GLI", Color = "Black" };
-            Car c3 = new Car() { Brand = "Porsche", Model = "968 snowplow", Color = "White" };
+            Car c1 = new Car() { Brand = "Ferrari", Model = " Lamborghinis", Color = "Red", Image= "ms-appx:///Images/chevrolet.jpg" };
+            Car c2 = new Car() { Brand = "Honda", Model = "GLI", Color = "Black", Image = "ms-appx:///Images/chevrolet.jpg" };
+            Car c3 = new Car() { Brand = "Porsche", Model = "968 snowplow", Color = "White", Image = "ms-appx:///Images/chevrolet.jpg" };
             dataList.Add(c1);
             dataList.Add(c2);
             dataList.Add(c3);

@@ -36,6 +36,7 @@ namespace Smarty.ViewModels
             menuItems.Add(new MenuItem() { Title = "Home", SymbolIcon = Symbol.Home, NavigateTo = typeof(Home) });
             menuItems.Add(new MenuItem() { Title = "Cars Available", SymbolIcon = Symbol.List, NavigateTo = typeof(List) });
             menuItems.Add(new MenuItem() { Title = "Add a Car", SymbolIcon = Symbol.Add, NavigateTo = typeof(Add) });
+            menuItems.Add(new MenuItem() { Title = "Location", SymbolIcon = Symbol.Add, NavigateTo = typeof(Location) });
 
             return menuItems;
         }

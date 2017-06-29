@@ -8,22 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel Orientation="Vertical"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center">
-            <Viewbox MaxHeight="100"
-                     MaxWidth="100">
-                <SymbolIcon Symbol="List" />
-            </Viewbox>
-            <TextBlock TextAlignment="Center"
-                       Text="Available Cars"
-                       Margin="0,15,0,0" />
-        </StackPanel>
         <ListView x:Name="CarList">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                        <StackPanel>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Image Source="{Binding Image}"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
                             <TextBlock Text="{Binding Brand}"></TextBlock>
                             <TextBlock Text="{Binding Model}"></TextBlock>
                             <TextBlock Text="{Binding Color}"></TextBlock>
